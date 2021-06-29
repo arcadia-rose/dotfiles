@@ -14,7 +14,7 @@ ln -sfn $(pwd)/zsh/.zshrc ~/.zshrc
 #
 
 if ! command -v rg &> /dev/null; then sudo apt-get install -y ripgrep; fi
-if ! command -v fd &> /dev/null; then sudo apt-get install -y fd-find; fi
+if ! command -v fdfind &> /dev/null; then sudo apt-get install -y fd-find; fi
 
 #
 # Set up specific tools and plugins
