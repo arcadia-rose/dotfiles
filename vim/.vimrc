@@ -33,6 +33,8 @@ command -nargs=+ RG :vnew | :r ! rg -l <args> .
 command -nargs=+ FD :vnew | :r ! fd <args>
 nnoremap <leader>f <c-w>f
 
+" Toggle NerdTree with a leader shortcut
+nnoremap <leader>n :NERDTreeToggle<CR>
 
 " Highlight the current position
 set ruler
@@ -101,5 +103,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
+Plug 'preservim/nerdtree'
 
 call plug#end()
