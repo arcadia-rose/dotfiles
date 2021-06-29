@@ -4,10 +4,10 @@
 # Create symlinks to basic dotfiles.
 #
 
-ln -sfn vim/.vimrc ~/.vimrc
-ln -sfn zsh/.aliases ~/.aliases
-ln -sfn zsh/.env ~/.env
-ln -sfn zsh/.zshrc ~/.zshrc
+ln -sfn $(pwd)/vim/.vimrc ~/.vimrc
+ln -sfn $(pwd)/zsh/.aliases ~/.aliases
+ln -sfn $(pwd)/zsh/.env ~/.env
+ln -sfn $(pwd)/zsh/.zshrc ~/.zshrc
 
 #
 # Install useful tools.
