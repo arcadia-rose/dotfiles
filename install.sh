@@ -20,5 +20,8 @@ if ! command -v fd &> /dev/null; then sudo apt-get install -y fd-find; fi
 # Set up specific tools and plugins
 #
 
-# Install vim plugins
+# Install vim plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Set up my plugins
 vim +PlugInstall +qall
