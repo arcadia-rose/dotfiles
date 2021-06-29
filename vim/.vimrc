@@ -30,7 +30,7 @@ let mapleader = " "
 " separate lines, vim doesn't have a hard time finding the end of the
 " filename.
 command -nargs=+ RG :vnew | :r ! rg -l <args> .
-command -nargs=+ FD :vnew | :r ! fd <args>
+command -nargs=+ FD :vnew | :r ! fdfind <args>
 nnoremap <leader>f <c-w>f
 
 " Toggle NerdTree with a leader shortcut
