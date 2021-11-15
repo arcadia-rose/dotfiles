@@ -17,6 +17,11 @@ if ! command -v rg &> /dev/null; then sudo apt-get install -y ripgrep; fi
 if ! command -v fdfind &> /dev/null; then sudo apt-get install -y fd-find; fi
 
 #
+# Aliases
+#
+alias styletest="dev style --include-branch-commits && dev t --include-branch-commits"
+
+#
 # Set up specific tools and plugins
 #
 
