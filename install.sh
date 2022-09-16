@@ -30,3 +30,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 
 # Set up my plugins
 vim +PlugInstall +qall
+vim +"Copilot setup" +qall
+
+# Copilot secrets
+if [ -f /etc/spin/secrets/copilot_hosts.json ]; then
+  mkdir -p "${HOME}/.config/github-copilot"
+  cp /etc/spin/secrets/copilot_hosts.json "${HOME}/.config/github-copilot/hosts.json"
+fi

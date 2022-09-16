@@ -105,5 +105,10 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'preservim/nerdtree'
 Plug 'leafgarland/typescript-vim'
+Plug 'tpope/copilot'
 
 call plug#end()
+
+let g:LanguageClient_serverCommands = {
+      \ 'ruby': ['bundle', 'exec', 'srb', 'tc', '--lsp']
+      \ }
