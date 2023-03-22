@@ -102,10 +102,6 @@ nnoremap qwl :wincmd l<CR>
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-rails'
-Plug 'preservim/nerdtree'
-Plug 'leafgarland/typescript-vim'
-Plug 'tpope/copilot'
 
 call plug#end()
 

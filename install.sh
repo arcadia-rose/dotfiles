@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+set -e +x
+
 #
 # Create symlinks to basic dotfiles.
 #
